@@ -6,7 +6,7 @@
 /*   By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:48:59 by dolifero          #+#    #+#             */
-/*   Updated: 2024/04/29 17:34:22 by dolifero         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:04:27 by dolifero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stddef.h>
-// # include "../ft_printf/ft_printf.h"
+# include "ft_printf/ft_printf.h"
 
 typedef struct s_list
 {
@@ -74,8 +74,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 char	*get_next_line(int fd);
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 120
+# ifndef GNL_BUFFER_SIZE
+#  define GNL_BUFFER_SIZE 120
 # endif
 
 

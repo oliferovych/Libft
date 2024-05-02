@@ -6,7 +6,7 @@
 /*   By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 10:19:38 by dolifero          #+#    #+#             */
-/*   Updated: 2024/04/24 18:18:10 by dolifero         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:06:50 by dolifero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 int		ft_putstr_fd1(char *s, int fd);
 int		ft_putchar_fd1(char c, int fd);
 
-int		ft_putnbr_fd(int n, int fd);
+int		ft_putnbr_fd1(int n, int fd);
 int		ft_putunsigned_fd(unsigned int n, int fd);
 int		ft_putnbr_base(unsigned int nbr, char *base);
 int		put_pointer(void *n);

@@ -6,9 +6,11 @@
 #    By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 14:48:30 by dolifero          #+#    #+#              #
-#    Updated: 2024/04/29 17:44:45 by dolifero         ###   ########.fr        #
+#    Updated: 2024/05/02 15:03:48 by dolifero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+vpath %.c / ft_printf
 
 SRCS			=	ft_isalpha.c\
 					ft_isdigit.c\
@@ -44,7 +46,12 @@ SRCS			=	ft_isalpha.c\
 					ft_putstr_fd.c\
 					ft_putendl_fd.c\
 					ft_putnbr_fd.c\
-					get_next_line.c
+					get_next_line.c\
+					ft_printf.c\
+					ft_putptr.c\
+					integer_print.c\
+					utilities.c
+
 OBJS			= $(SRCS:.c=.o)
 
 BONUS_SRCS		=	ft_lstnew_bonus.c\

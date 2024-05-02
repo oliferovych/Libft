@@ -6,7 +6,7 @@
 /*   By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 10:34:02 by dolifero          #+#    #+#             */
-/*   Updated: 2024/03/21 15:35:31 by dolifero         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:05:23 by dolifero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	print_special_cases(int n, int fd)
 	}
 }
 
-int	ft_putnbr_fd(int n, int fd)
+int	ft_putnbr_fd1(int n, int fd)
 {
 	int	i;
 	int	length;

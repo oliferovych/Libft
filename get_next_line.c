@@ -6,7 +6,7 @@
 /*   By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 14:52:12 by dolifero          #+#    #+#             */
-/*   Updated: 2024/04/28 19:37:15 by dolifero         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:01:01 by dolifero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_read_buffer(char *buffer, int fd)
 {
 	int		byte_count;
-	char	temp[BUFFER_SIZE + 1];
+	char	temp[GNL_BUFFER_SIZE + 1];
 	char	*container;
 
 	byte_count = 1;
@@ -25,7 +25,7 @@ char	*ft_read_buffer(char *buffer, int fd)
 		return (NULL);
 	while (!ft_strchr(buffer, '\n') && byte_count >= 0)
 	{
-		byte_count = read(fd, temp, BUFFER_SIZE);
+		byte_count = read(fd, temp, GNL_BUFFER_SIZE);
 		if (byte_count < 0)
 			return (free(buffer), NULL);
 		if (byte_count == 0)
@@ -95,7 +95,7 @@ char	*get_next_line(int fd)
 	char		*final_line;
 
 	final_line = NULL;
-	if (fd < 0 || BUFFER_SIZE < 1)
+	if (fd < 0 || GNL_BUFFER_SIZE < 1)
 		return (NULL);
 	buffer = ft_read_buffer(buffer, fd);
 	if (!buffer)

@@ -6,7 +6,7 @@
 /*   By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 14:34:26 by dolifero          #+#    #+#             */
-/*   Updated: 2024/03/21 16:17:46 by dolifero         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:07:09 by dolifero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,17 @@ int	format_check(char after_perc, va_list args, int fd)
 
 	add_length = 0;
 	if (after_perc == '%')
-		add_length = ft_putchar_fd('%', fd);
+		add_length = ft_putchar_fd1('%', fd);
 	else if (after_perc == 'c')
-		add_length = ft_putchar_fd(va_arg(args, int), fd);
+		add_length = ft_putchar_fd1(va_arg(args, int), fd);
 	else if (after_perc == 's')
-		add_length = ft_putstr_fd(va_arg(args, char *), fd);
+		add_length = ft_putstr_fd1(va_arg(args, char *), fd);
 	else if (after_perc == 'p')
 		add_length = put_pointer(va_arg(args, void *));
 	else if (after_perc == 'd')
-		add_length = ft_putnbr_fd(va_arg(args, int), fd);
+		add_length = ft_putnbr_fd1(va_arg(args, int), fd);
 	else if (after_perc == 'i')
-		add_length = ft_putnbr_fd(va_arg(args, int), fd);
+		add_length = ft_putnbr_fd1(va_arg(args, int), fd);
 	else if (after_perc == 'u')
 		add_length = ft_putunsigned_fd(va_arg(args, unsigned int), fd);
 	else if (after_perc == 'x' || after_perc == 'X')
