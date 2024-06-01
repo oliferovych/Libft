@@ -6,7 +6,7 @@
 #    By: dolifero <dolifero@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 14:48:30 by dolifero          #+#    #+#              #
-#    Updated: 2024/05/02 15:03:48 by dolifero         ###   ########.fr        #
+#    Updated: 2024/06/01 17:14:01 by dolifero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRCS			=	ft_isalpha.c\
 					ft_strnstr.c\
 					ft_atoi.c\
 					ft_calloc.c\
+					ft_realloc.c\
 					ft_strdup.c\
 					ft_substr.c\
 					ft_strjoin.c\
